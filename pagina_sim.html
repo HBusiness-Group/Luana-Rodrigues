@@ -6,17 +6,63 @@
     <title>Um Novo Começo</title>
     <link rel="stylesheet" href="estilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos extras APENAS para esta página */
+        #tela-entrada {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f4e9e7; /* Mesma cor do fundo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
+
+        #conteudo-principal {
+            /* O conteúdo começa escondido */
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <div class="container-conteudo">
+
+    <div id="tela-entrada">
+        <button onclick="iniciarExperiencia()">Clique para abrir a sua mensagem</button>
+    </div>
+
+    <audio id="minhaMusica" loop>
+        <source src="https://hbusiness-group.github.io/Luana-Rodrigues/Amado - Vanessa da Mata.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+
+    <div class="container-conteudo" id="conteudo-principal">
         <h1>Você não imagina a felicidade que estou sentindo!</h1>
         <p>Obrigado. De todo o coração. Esta página é a promessa de um novo começo. É a minha forma de dizer que eu quero fazer dar certo, com mais cuidado, mais carinho e mais atenção.</p>
-        <p>Nunca deixei de lhe incluir nos meus planos, ele são NOSSOS PLANOS na verdade... estou indo final de agosto pra Natal/RN pra morar, quero que você venha comigo, isso é importante.</p>
-        <p>Vamos começar a nossa vida juntos em um lugar novo, com pessoas ao nosso redor diferentes... quero casar com você e corrigir um erro que cometemos juntos, quero ter uma família com você!</p>
+        <p>Eu nunca deixei de incluir você nos meus planos — na verdade, eles são nossos planos. No final de agosto, vou me mudar para Natal/RN para morar lá, e quero muito que você venha comigo. Isso é importante pra mim..</p>
+        <p>Quero que a gente comece a nossa vida juntos, em um lugar novo, cercados de pessoas diferentes, vivendo novas histórias. Quero casar com você, quero consertar um erro que cometemos juntos e construir uma família ao seu lado.</p>
       
         </div>
+
+    <script>
+        function iniciarExperiencia() {
+            // Pega os elementos da página
+            var telaEntrada = document.getElementById('tela-entrada');
+            var conteudoPrincipal = document.getElementById('conteudo-principal');
+            var musica = document.getElementById('minhaMusica');
+
+            // Toca a música
+            musica.play();
+
+            // Esconde a tela de entrada
+            telaEntrada.style.display = 'none';
+
+            // Mostra o seu conteúdo
+            conteudoPrincipal.style.display = 'block';
+        }
+    </script>
+
 </body>
-    <audio autoplay loop>
-    <source src="https://hbusiness-group.github.io/Luana-Rodrigues/Amado - Vanessa da Mata.mp3" type="audio/mpeg">
-    Seu navegador não suporta áudio.
-</audio></html>
+</html>
