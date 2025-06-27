@@ -1,0 +1,112 @@
+/* ARQUIVO: estilo.css (Versão Romântica) */
+
+/* Estilo geral */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f4e9e7; /* Um fundo rosado bem claro */
+    color: #4c4c4c; /* Cinza escuro para texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Container principal */
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Container das páginas de conteúdo */
+.container-conteudo {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    text-align: left;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #b33951; /* Um tom de vinho/bordô */
+}
+
+p {
+    line-height: 1.7;
+    font-size: 1.1em;
+}
+
+input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 12px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    color: #4c4c4c;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Botões */
+button, .botao-sim, .botao-nao {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-family: 'Lato', sans-serif;
+}
+
+button {
+    background-color: #b33951;
+    color: #ffffff;
+}
+button:hover {
+    background-color: #80283b;
+}
+
+.botoes-quiz {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.botao-sim {
+    background-color: #4a7c59; /* Verde esperança */
+    color: white;
+}
+.botao-sim:hover {
+    background-color: #3b6347;
+}
+
+.botao-nao {
+    background-color: #a9a9a9; /* Cinza neutro */
+    color: white;
+}
+.botao-nao:hover {
+    background-color: #8b8b8b;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
